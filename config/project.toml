@@ -1,0 +1,5 @@
+# Public project coordinates only; never place credentials in this file.
+[supabase]
+project_ref = "hltlwyjsaxredjxdhwhy"
+url = "https://hltlwyjsaxredjxdhwhy.supabase.co"
+storage_bucket = "original-pdfs"
