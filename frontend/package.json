@@ -1,0 +1,34 @@
+{
+  "name": "middlegap-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 127.0.0.1",
+    "build": "next build",
+    "start": "next start -H 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "TSX_TSCONFIG_PATH=tsconfig.test.json node --import tsx --test tests/*.test.ts",
+    "postinstall": "node scripts/copy-pdf-worker.mjs",
+    "format": "prettier --write \"{app,components,lib,scripts,tests}/**/*.{ts,tsx,js,mjs,css}\" \"*.{json,mjs,ts,md}\" --ignore-path ../.prettierignore",
+    "format:check": "prettier --check \"{app,components,lib,scripts,tests}/**/*.{ts,tsx,js,mjs,css}\" \"*.{json,mjs,ts,md}\" --ignore-path ../.prettierignore",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "next": "15.5.24",
+    "pdfjs-dist": "5.4.296",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.3.6",
+    "@types/node": "22.20.1",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "eslint": "9.39.5",
+    "eslint-config-next": "15.5.24",
+    "playwright": "1.63.0",
+    "prettier": "3.9.9",
+    "tsx": "4.23.13",
+    "typescript": "5.9.3"
+  }
+}

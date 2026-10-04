@@ -1,0 +1,17 @@
+**/node_modules/
+**/.next/
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.ruff_cache/
+frontend/public/pdf.worker.min.mjs
+frontend/public/pdf-standard-fonts/
+frontend/public/pdf-wasm/
+frontend/next-env.d.ts
+frontend/private/
+**/package-lock.json
+**/uv.lock
+backend/data/
+docs/specification.md
+LICENSE
+artifacts/
